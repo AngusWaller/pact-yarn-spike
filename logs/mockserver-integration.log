@@ -1,0 +1,56 @@
+I, [2019-04-30T11:39:03.921774 #19860]  INFO -- : Registered expected interaction GET /dogs
+D, [2019-04-30T11:39:03.922095 #19860] DEBUG -- : {
+  "description": "a request for projects",
+  "providerState": "i have a list of projects",
+  "request": {
+    "method": "GET",
+    "path": "/dogs",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": [
+      {
+        "dog": 1
+      }
+    ]
+  }
+}
+I, [2019-04-30T11:39:03.937250 #19860]  INFO -- : Received request GET /dogs
+D, [2019-04-30T11:39:03.937403 #19860] DEBUG -- : {
+  "path": "/dogs",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Accept": "application/json",
+    "User-Agent": "axios/0.14.0",
+    "Host": "localhost:8991",
+    "Connection": "close",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2019-04-30T11:39:03.937619 #19860]  INFO -- : Found matching response for GET /dogs
+D, [2019-04-30T11:39:03.937717 #19860] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": [
+    {
+      "dog": 1
+    }
+  ]
+}
+I, [2019-04-30T11:39:03.944146 #19860]  INFO -- : Verifying - interactions matched
+I, [2019-04-30T11:39:03.948983 #19860]  INFO -- : Updating pact for MyProvider at /home/angus/WebstormProjects/testbed/pact-spike-attempt2/pacts/myconsumer-myprovider.json
+I, [2019-04-30T11:39:03.950142 #19860]  INFO -- : *****************************************************************************
+I, [2019-04-30T11:39:03.952261 #19860]  INFO -- : Cleared interactions
+I, [2019-04-30T11:39:03.952347 #19860]  INFO -- : Updating existing file ./home/angus/WebstormProjects/testbed/pact-spike-attempt2/pacts/myconsumer-myprovider.json as pactfile_write_mode is :update
+I, [2019-04-30T11:39:03.952582 #19860]  INFO -- : Only interactions defined in this test run will be updated.
+I, [2019-04-30T11:39:03.952672 #19860]  INFO -- : As interactions are identified by description and provider state, pleased note that if either of these have changed, the old interactions won't be removed from the pact file until the specs are next run with :pactfile_write_mode => :overwrite.
+I, [2019-04-30T11:39:03.952706 #19860]  INFO -- : *****************************************************************************

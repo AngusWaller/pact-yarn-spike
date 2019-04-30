@@ -1,0 +1,27 @@
+{
+  "name": "jest",
+  "version": "1.0.0",
+  "description": "Jest Pact example",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest __tests__/ --runInBand --setupFiles ./pact/pactSetup.js --setupTestFrameworkScriptFile ./pact/pactTestWrapper.js ",
+    "publish:pact": "node pact/publish.js"
+  },
+  "license": "MIT",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jest": "^22.5.1",
+    "jest": "^24.7.1",
+    "jest-cli": "^21.0.0"
+  },
+  "dependencies": {
+    "@pact-foundation/pact": "^8.2.2",
+    "dotenv": "^7.0.0",
+    "axios": "^0.14.0"
+  }
+}
